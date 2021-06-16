@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charser="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Que horas são?</h1>
+        <div>
+            <img src="_images/relogio.gif">
+            <div id="horas"></div>
+        </div>
+    </section>
+    <footer>&copy;Matheus da Costa</footer>
+    <script>
+        window.setInterval( () => {
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+            window.document.querySelector("div#horas").innerHTML = `<p>${h}:${m}:${s}</p>`;
+        }, 1000);
+    </script>
+</body>
+</html>

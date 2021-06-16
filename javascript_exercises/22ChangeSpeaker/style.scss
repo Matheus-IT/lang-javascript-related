@@ -1,0 +1,16 @@
+.xTimesButton {
+    color: gray;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 7px;
+    border: none;
+    border-radius: 100px;
+}
+.xTimesButton:hover {
+    background-color: white;
+}
+
+.actButton {
+    @extend .xTimesButton;
+}

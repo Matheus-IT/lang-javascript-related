@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Botoes</title>
+    <style>
+        div {
+            background-color: rgba(64, 155, 158, 0.432);
+            margin: auto;
+            text-align: center;
+        }
+        button {
+            color: white;
+            background-color:rgba(64, 155, 158, 1);
+            border: solid 2px rgba(64, 155, 158, 1);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+        button:focus {
+            outline-style: none;
+        }
+        button:active {
+            background-color: rgba(64, 155, 158, 0.432);
+            border: solid 2px rgba(64, 155, 158, 0.432);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>Botão1</button>
+        <button>Botão2</button>
+        <button>Botão3</button>
+    </div>
+    <script>
+        var b = window.document.getElementsByTagName("button");
+        b[0].addEventListener("click", () => {window.alert(`Você pressionou ${b[0].innerHTML}`)});
+        b[1].addEventListener("click", () => {window.alert(`Você pressionou ${b[1].innerHTML}`)});
+        b[2].addEventListener("click", () => {window.alert(`Você pressionou ${b[2].innerHTML}`)});
+    </script>
+</body>
+</html>

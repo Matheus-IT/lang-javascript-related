@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma</title>
+    <style>
+        body {
+            color: white;
+            font: normal 15pt Arial;
+            background-color: rgba(31, 161, 31, 0.692);
+        }
+        header {
+            margin-bottom: -15px;
+            padding: 0px;
+            text-align: center;
+        }
+        section {
+            margin: auto;
+            padding: 10px;
+            width: 350px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+        section input {
+            width: 125px;
+        }
+        section input#btn {
+            width: 75px;
+            padding: 4px;
+            background-color: rgba(31, 161, 31, 0.692);
+            border-radius: 5px;
+            border: 0px;
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+        }
+        section input#btn:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        footer {
+            margin-top: 10px;
+            font-size: 12pt;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Somador</h1></header>
+    <section>
+        <div id="entrada">
+            <input type="number" id="n1">
+            <input type="number" id="n2">
+            <input type="button" id="btn" value="Calcular">
+        </div>
+        <div id="saida">
+            <!--Vou criar o resultado dinamicamente com javascript-->
+        </div>
+    </section>
+    <footer>&copy;Matheus Costa</footer>
+    <script>
+        class Somador {
+            constructor() {
+                this.n1 = window.document.querySelector("input#n1");
+                this.n2 = window.document.querySelector("input#n2");
+                this.btn = window.document.querySelector("input#btn");
+            }
+            somar() {
+                let soma = Number.parseInt(n1.value) + Number.parseInt(n2.value);
+                window.document.querySelector("div#saida").innerHTML = `<p>Resultado: ${soma}</p>`;
+            }
+        }
+
+        var s = new Somador();
+
+        s.btn.addEventListener("click", s.somar);
+    </script>
+</body>
+</html>

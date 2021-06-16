@@ -1,0 +1,18 @@
+body {
+    font: normal 14pt Arial, sans-serif;
+    background-color: #7fb5ff;
+}
+
+section > div {
+    width: 450px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #96bbb7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1)
+}
+
+div#data_input > input {
+    width: 190px;
+}

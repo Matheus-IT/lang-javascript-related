@@ -1,0 +1,21 @@
+* {
+    font: normal 14pt Arial;
+}
+
+body {
+    background-color: rgb(124, 197, 173);
+}
+
+div#conversor {
+    background-color: white;
+    width: 450px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid rgb(131, 65, 185);
+    transition: 0.5s;
+}
+div#conversor:hover {
+    border-bottom: 5px solid rgb(159, 131, 182);
+    transition: 0.5s;
+}

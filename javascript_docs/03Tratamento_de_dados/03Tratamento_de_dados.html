@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Terceiro programa</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white; /*Esse é um comentário em css*/
+            font: normal 24pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá!</h1> <!--Isso é um comentário em html-->
+    <script>
+         var nome = window.prompt("Qual é o seu nome?")
+         //Isso é um comentário
+         /*Em javascript*/
+         window.alert("Olá " + nome)
+        /*
+            CONVERTENDO TIPOS DE DADOS
+            var n = "5"
+            Number.parseInt(n) ou Number(n) //String para inteiro
+            n.toString() ou String(n)       //Inteiro para string
+            
+        */
+        /*
+            USANDO E MOSTRANDO DIFERENTES TIPOS DE STRINGS
+             var s = "JavaScript"
+             //Aspas duplas
+            "Eu estou estudando s" //Não mostra o valor
+            >output> Eu estou estudando s
+            "Eu estou estudando " + s //Usando concatenação
+            >output> Eu estou estudando JavaScript
+            
+            //Mesma coisa para aspas simples
+            'Eu estou estudando s' //Não mostra o valor
+            >output> Eu estou estudando s
+            'Eu estou estudando ' + s //Usando concatenação
+            >output> Eu estou estudando JavaScript
+            
+            //Usando crase e ${}
+            `Estou estudando ${s}`
+            >output> Eu estou estudando JavaScript
+        */
+        var n1 = Number.parseInt(window.prompt("Digite um número:")) //Esse cara recebe uma string, por isso tenho que converter STRING PARA INTEIRO
+        var n2 = Number(window.prompt("Digite outro número:")) //Só com Number() o Javascript decide qual tipo converter
+        //var n2 = Number.parseInt(window.prompt("Digite outro número:"))
+        var s = n1 + n2
+        window.alert("A soma de " + n1 + " com " + n2 + " é igual a " + s)
+        //window.alert(`A soma de ${n1} com ${n2} é igual a ${s}`) //Usando interpolação com tamplate strings
+    </script> 
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcula troco</title>
+    <style>
+        div {
+            font: normal 15pt Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            border: solid 2px gray;
+            border-radius: 5px;
+            margin: 0px;
+            padding: 10px;
+        }
+        button:active {
+            border: solid 2px rgb(85, 85, 85);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calcula troco</h1>
+        <button onclick="comprar()">Comprar produto</button>
+    </div>
+    <script>
+        const cash = (v) => {return `R$${v.toFixed(2)}`};
+
+        function comprar() {
+            var n_prod = prompt("Qual o nome do produto que você vai comprar?");
+            var price = Number.parseFloat(prompt(`Quanto custa ${n_prod} que você está comprando?`));
+            var money = Number.parseFloat(prompt(`Qual o valor que você deu para pagar ${n_prod}?`));
+            var change = money - price;
+            alert(`Você comprou ${n_prod} que custou ${cash(price)}\nDeu ${cash(money)} em dinheiro e vai receber ${cash(change)} de troco\nVolte sempre!`)
+        }
+    </script>
+</body>
+</html>

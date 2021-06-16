@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Reajuste</title>
+</head>
+<body>
+    <header>
+        <h1>Reajuste Salarial</h1>
+    </header>
+    <button id="btn" onclick="calc_ajust()">Reajuste</button>
+    <div id="res"></div>
+    <script>
+        "use strict";
+        function calc_ajust() {
+            const worker = {name:"", salary:0.0, new_salary:0.0};
+            let adjustment = 0;
+            let percent = 0;
+            worker.name = prompt("Qual o nome do fucionário?");
+            worker.salary = Number.parseFloat(prompt(`Qual o salário de ${worker.name}?`));
+            percent = Number.parseFloat(prompt(`O salário de ${worker.name} vai ser reajustado em quantos porcento?`));
+            adjustment = (percent / 100) * worker.salary;
+            worker.new_salary = worker.salary + adjustment;
+            window.document.querySelector("div#res").innerHTML = `
+                <h1>${worker.name} recebeu um aumento salarial</h1>
+                <p>
+                    O salário era de R$${worker.salary.toFixed(2)}.<br>
+                    Com o aumento de ${percent}%, o salário vai aumentar R$${adjustment.toFixed(2)} no próximo mês.<br>
+                    E a partir daí ${worker.name} vai passar a ganhar R$${worker.new_salary.toFixed(2)}.<br>
+                <p/>
+            `;
+        }
+    </script>
+</body>
+</html>

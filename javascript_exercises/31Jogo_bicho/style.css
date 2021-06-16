@@ -1,0 +1,90 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font: normal 14pt Arial, sans-serif;
+	background-color: #552a70;
+}
+
+.container {
+	margin: auto auto;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.main {
+  position: relative;
+	color: white;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-top: 10%;
+	background-image:	linear-gradient(45deg, #eb8697, #8a26e7);
+	width: 50%;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	padding: 5px;
+}
+input:focus {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	border-color: #8a26e7;
+}
+
+button {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 10px;
+}
+button:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+button:active {
+	color: white;	
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	border-color: #8a26e7;
+}
+
+#res {
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 53%;
+}
+
+#animal {
+  margin-left: 33%;
+  width: 100px;
+}
+
+@media (max-width: 599px) {
+  .main {
+    width: 90%;
+  }
+  #res {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #animal {
+    margin: 10px auto;
+    width: 110px;
+  }
+}

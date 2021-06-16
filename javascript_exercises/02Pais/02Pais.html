@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>País</title>
+</head>
+<body>
+    <h1>Vivendo em qual país?</h1>
+    <input type="text" value="Insira sua nacionalidade..."name="txt1" id="txt1">
+    <input type="button" value="Verificar" name="btn1" id="btn1">
+    <div id="res"></div>
+    <script>
+        function verifica() {
+            var r = window.document.querySelector('div#res')
+            var pais = txt.value
+            r.innerHTML = `Vivendo em ${pais} <br>`
+            if (pais == 'Brasil') {
+                r.innerHTML += 'Você é Brasileiro'
+            } else {
+                r.innerHTML += 'Você é Estrangeiro'
+            }
+        }
+
+        function limpa_texto() {
+            txt.value = ''
+        }
+
+        var txt = window.document.querySelector('input#txt1')
+        var btn = window.document.querySelector('input#btn1')
+        txt.addEventListener('click', limpa_texto)
+        btn.addEventListener('click', verifica)
+    </script>
+</body>
+</html>

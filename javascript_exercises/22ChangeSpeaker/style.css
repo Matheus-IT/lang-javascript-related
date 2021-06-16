@@ -1,0 +1,15 @@
+.xTimesButton, .actButton {
+  color: gray;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 7px;
+  border: none;
+  border-radius: 100px;
+}
+
+.xTimesButton:hover, .actButton:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

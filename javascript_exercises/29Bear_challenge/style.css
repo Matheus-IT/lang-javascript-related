@@ -1,0 +1,9 @@
+div#bear {
+	padding: 10px;
+	margin: auto;
+	background-color: gray;
+}
+
+img#bear_back {
+	transform: scaleX(-1); /* When the bear goes back */
+}

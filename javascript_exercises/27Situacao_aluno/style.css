@@ -1,0 +1,63 @@
+section > button, section > div#res, section#container {
+  border: 1px solid #CA93FF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: normal 1em Arial, sans-serif;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+section#container {
+  width: 700px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(45deg, #BB6EFF, #4C32B3);
+}
+
+section > header {
+  font-size: 1.7em;
+}
+
+section > div#res {
+  display: none;
+  /*It will appear when I click the button*/
+  box-shadow: none;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+section > button {
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #8656B3;
+  outline: none;
+}
+
+section > button:hover {
+  color: black;
+  background-color: #CA93FF;
+  cursor: pointer;
+}
+
+section > button:active {
+  border-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

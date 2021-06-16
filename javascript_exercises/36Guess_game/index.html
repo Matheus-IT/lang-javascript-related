@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess game</title>
+	<style>
+		.container {
+			margin: auto;
+			padding: 0.8em;
+			width: 90%;
+			text-align: center;
+			background-color: rgb(151, 150, 150);
+		}
+		.game_img {
+			margin: 0.8em;
+			filter: blur(5px);
+			transition: .5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="game_img" src="images/zero.jpg" >
+		<img class="game_img" src="images/one.jpg" >
+		<img class="game_img" src="images/two.jpg" >
+		<img class="game_img" src="images/three.jpg" >
+		<img class="game_img" src="images/four.jpg" >
+		<img class="game_img" src="images/five.jpg" >
+	</div>
+	<script>
+
+		function hideAnswer() {
+			event.target.style.filter = "blur(5px)";
+		}
+
+		function showAnswer() {
+			event.target.style.filter = "none";
+		}
+
+		function init() {
+			var images = document.querySelectorAll(".game_img");
+			
+			images.forEach((img) => {
+				img.onmouseover = showAnswer;
+				img.onmouseout = hideAnswer;
+			});
+		}
+		
+		window.onload = init;
+	</script>
+</body>
+</html>

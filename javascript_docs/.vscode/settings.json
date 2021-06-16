@@ -1,0 +1,9 @@
+{
+		"editor.tabSize": 2,
+		"editor.insertSpaces": false,
+		"cSpell.words": [
+			"nums"
+		],
+		"editor.fontFamily": "fantasque sans mono regular, 'Courier New', monospace",
+		"editor.fontSize": 18
+}

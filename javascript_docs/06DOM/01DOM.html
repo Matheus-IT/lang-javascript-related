@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Primeiros passos com o DOM</title>
+    <style></style>
+</head>
+<body>
+    <h1>Iniciando estudos Dom</h1>
+    <p>DOM: Document Object Model</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*
+            Posso acessar os elementos na árvore DOM:
+                 - Por Marca
+                 - Por ID
+                 - Por Nome
+                 - Por Classe
+                 - Por Seletor (CSS)
+        */
+        //   Pegando elemento por Marca
+        var p1 = window.document.getElementsByTagName("p")[0]; //Primeiro elemento
+        p1.style.color = "blue";
+        //   Pegando elemento por ID
+        var d = window.document.getElementById("msg");
+        d.style.background = "green";
+        //   Pegando elemento por Nome
+        var d = window.document.getElementsByName("msg")[0];
+        d.innerText = "Olá";
+        //   Pegando elemento por Classe
+        var d = window.document.getElementsByClassName("msg")[0];
+        d.innerText = "Eu sou a nova mensagem";
+        //   Pegando elemento com o querySelector
+        var d = window.document.querySelector("div#msg"); //Quando ID coloco "div#msg"; Quando Classe coloco "div.msg";
+        d.style.background = "blue";
+    </script>
+</body>
+</html>

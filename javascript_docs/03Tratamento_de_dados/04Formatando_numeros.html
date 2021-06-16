@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Métodos strings</title>
+    <style> <!--Isso é css-->
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script> /*Isso é JavaScript*/
+        //Formatando números
+        var n1 = Number(window.prompt('Digite uma número'))
+        document.write(`Voce digitou o número ${n1}<br/>`)
+        document.write(`Formatado em dinheiro R\$${n1.toFixed(2).replace('.', ',')}<br/>`) //toFixed(n de casas decimais).replace(onde tiver isso, ponha isso)
+        document.write(`Também posso formatar desse jeito ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br/>`) //Dessa forma criando um objeto do tipo monetário e mostrando ele em seguida
+    </script>
+</body>
+</html>

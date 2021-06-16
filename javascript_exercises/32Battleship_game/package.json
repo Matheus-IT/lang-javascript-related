@@ -1,0 +1,15 @@
+{
+  "name": "32battleship_game",
+  "version": "1.0.0",
+  "description": "A battleship game",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.3.1"
+  }
+}

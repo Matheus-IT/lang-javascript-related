@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji</title>
+    <style>
+        body {
+            background-color: rgba(137, 43, 226, 0.247);
+            font: normal 14pt Arial;
+        }
+        body section {
+            text-align: center;
+            background-color: white;
+            box-shadow: 5px 5px 2px rgba(128, 128, 128, 0.432);
+            border-radius: 10px;
+            width: 350px;
+            height: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img id="emoji" src="images/emoji_triste.png">
+        <p id="msg">Me aperte</p>
+    </section>
+    <script>
+        function troca1(){
+            img.setAttribute("src", "images/emoji_lingua.png");
+        }
+        function troca2(){
+            img.setAttribute("src", "images/emoji_sorrindo.png");
+            window.document.querySelector("p#msg").innerHTML = "Hahaha";
+        }
+        function troca3(){
+            img.setAttribute("src", "images/emoji_triste.png");
+            window.document.querySelector("p#msg").innerHTML = "Me aperte";
+        }
+        var img = window.document.querySelector("img#emoji");
+        img.addEventListener("click", troca1);
+        img.addEventListener("mouseenter", troca2);
+        img.addEventListener("mouseout", troca3);
+    </script>
+</body>
+</html>

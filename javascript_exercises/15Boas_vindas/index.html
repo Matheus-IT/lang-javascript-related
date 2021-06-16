@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Boas vindas</title>
+    <style>
+        div {
+            font: normal 15pt Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            margin: 0px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Boas vindas</h1>
+        <button onclick="mensagens()">Me aperte!</button>
+    </div>
+    <script>
+        function mensagens() {
+            var name = window.prompt("Qual é o seu nome?");
+            var age = window.prompt(`Olá ${name}, quantos anos você tem?`);
+            window.alert(`Acabei de conhecer ${name} que tem ${age} anos de idade`);
+        }
+    </script>
+</body>
+</html>

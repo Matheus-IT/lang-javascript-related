@@ -1,0 +1,41 @@
+body {
+    color: white;
+    font: normal 16pt Arial;
+}
+
+section {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 9px 7px 1px rgba(0, 0, 0, 0.3);
+    background-color: #e36c4c;
+}
+
+section div img {
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+}
+
+div#horas {
+    width: 350px;
+    margin: 0px auto 20px auto;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 24pt;
+}
+
+footer {
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-style: italic;
+    font-size: 14pt;
+    text-align: center;
+}

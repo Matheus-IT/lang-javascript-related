@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Bicho</title>
+</head>
+<body>
+	<div class="container main">
+		<h1>JOGO DO BICHO!🐾</h1>
+		<div class="container">
+			<h2>Faça a sua aposta:</h2>
+			<input 
+				type="text"
+				id="bet_value"
+        onkeypress="return cashValidation()"
+        onkeyup="replaceComma()"
+				placeholder="Valor aqui R$..."
+			/>
+			<h2>Qual número vai apostar?</h2>
+			<input 
+				type="number" 
+				id="bet_n"
+				onkeypress="return validation()"
+				placeholder="Número da aposta" 
+			/>
+			<br>
+			<button onclick="evaluatePrice()">SORTEAR</button>
+      <div id="res"></div>
+		</div>
+	</div>
+	<script src="content.js"></script>
+</body>
+</html>

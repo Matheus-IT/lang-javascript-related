@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pirates booty</title>
+	<style>
+		.container {
+			color: #4b4b4b;
+			font: normal 2em Arial, sans-serif;
+			text-align: center;
+		}
+		img {
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img id="map" src="images/map.jpg">
+		<p id="coords">Move mouse to find coordinates...</p>
+	</div>
+	<script>
+
+		function showCoords() {
+			var res = document.querySelector("#coords");
+			var x = event.clientX;
+			var y = event.clientY;
+			res.innerHTML = `Map coordinates ${x}, ${y}`;
+		}
+
+		function init() {
+			var map = document.querySelector("#map");
+			map.onmousemove = showCoords;
+		}
+		
+		window.onload = init();
+	</script>
+</body>
+</html>

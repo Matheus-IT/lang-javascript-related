@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Antes depois</title>
+    <style>
+        div {
+            font: normal 15pt Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            border: solid 2px gray;
+            border-radius: 5px;
+            margin: 0px;
+            padding: 10px;
+        }
+        button:active {
+            border: solid 2px rgb(85, 85, 85);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Antes depois</h1>
+        <button onclick="mensagem()">Me aperte!</button>
+    </div>
+    <script>
+        function mensagem() {
+            var n = Number.parseInt(prompt(" Digite um número qualquer: "));
+            alert(`Antes de ${n} temos ${n-1}\nDepois de ${n} temos ${n+1}`);
+        }
+    </script>
+</body>
+</html>
